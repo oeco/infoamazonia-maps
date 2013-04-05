@@ -1,0 +1,86 @@
+{
+  "bounds": [
+    -80.354,
+    -18.9475,
+    -51.1303,
+    9.9151
+  ],
+  "center": [
+    -74.3664,
+    -3.0853,
+    7
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "amazonterrai04oct12",
+    "template_teaser": "<!-- deforestation -->\n\n<div class=\"tootip\">\n\t<div class=\"lang-en\">\n\t\t<h3>Areas deforested</h3>\n\t\t<div class=\"date\"><span class=\"label\">Detection date:</span> {{{xtra1_DA_1}}} </div>\n\t\t<div class=\"area\"><span class=\"label\">Area:</span> {{{area_ha_1}}} hectares</div>\t\n\t</div>\n\t<div class=\"lang-es\">\n\t\t<h3>Áreas deforestadas</h3>\n\t\t<div class=\"date\"><span class=\"label\">Fecha de detección:</span> {{{xtra1_DA_1}}} </div>\n\t\t<div class=\"area\"><span class=\"label\">Área:</span> {{{area_ha_1}}} hectáreas</div>\n\t</div>\n\t<div class=\"lang-pt\">\n\t\t<h3>Áreas desmatadas</h3>\n\t\t<div class=\"date\"><span class=\"label\">Data de detecção:</span> {{{xtra1_DA_1}}} </div>\n\t\t<div class=\"area\"><span class=\"label\">Área:</span> {{{area_ha_1}}} hectares</div>\n\t</div>\n</div>\n\n\n\n\n ",
+    "fields": [
+      "xtra1_DA_1",
+      "area_ha_1"
+    ]
+  },
+  "minzoom": 7,
+  "maxzoom": 12,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -79.27083336010003,
+        -18.156250066950008,
+        -51.72083340417993,
+        10.037499887940054
+      ],
+      "id": "amazonterrai04oct12",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/julianamori/Dropbox/InfoAmazonia_data/1_environmentalLayers/deforestation/TERRA-I/amazon_terrai_04_oct12/amazon_terrai_04_oct12.shp",
+        "id": "amazonterrai04oct12",
+        "project": "terrai_desmata",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "amazonterrai04oct12"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -79.30503492874979,
+        -18.155486596957868,
+        -51.720831164159165,
+        9.999207731572751
+      ],
+      "id": "ternobra",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/julianamori/Desktop/infoAmazonia/DADOS/terra-i/wgs84/ter_no_bra.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "ternobra"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "_basemap": "",
+  "name": "terrai_desmata7-12",
+  "description": "deforestation in Panamazonia (except Brazil) - Terrai data from 2004-Oct/2012\n::zoom 7-12, interactivity",
+  "attribution": "InfoAmazonia",
+  "legend": ""
+}

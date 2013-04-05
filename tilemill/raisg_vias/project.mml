@@ -1,0 +1,66 @@
+{
+  "bounds": [
+    -80.4638,
+    -19.5598,
+    -42.9345,
+    9.9689
+  ],
+  "center": [
+    -70.664,
+    -3.7327,
+    5
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "",
+    "template_teaser": "<div class=\"lang-pt\">\n\t\t<h2>Lotes Petroleiros</H2>\n               <div class='nombre'><span class='label'>Situação:</span> {{{leyenda}}}</div>\n\t\t<div class='nombre'><span class='label'>Nome:</span> {{{nombre}}}</div>\n\t\t<div class='applicant'><span class='label'>Requerente:</span> {{{cia}}}</div>\n                <div class='mineral'><span class='label'>Área oficial:</span> {{{area_oficial_ha}}} ha </div>\n</div>",
+    "fields": [
+      "leyenda",
+      "nombre",
+      "cia",
+      "area_oficial_ha"
+    ]
+  },
+  "minzoom": 1,
+  "maxzoom": 12,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "extent": [
+        -81.2218322753906,
+        -22.8625373840332,
+        -43.9791221618652,
+        12.4470205307007
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT * FROM  isa.vias WHERE amaz='S') AS data",
+        "key_field": "objectid",
+        "geometry_field": "shape",
+        "extent_cache": "auto",
+        "extent": "-81.2218322753906,-22.8625373840332,-43.9791221618652,12.4470205307007",
+        "dbname": "bd_raisg",
+        "host": "186.225.123.203",
+        "port": "45432",
+        "user": "ecoamazonia",
+        "password": "xpto@amz"
+      },
+      "id": "vias",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "vias"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "_basemap": " ",
+  "name": "ISA_vias",
+  "description": ".roads - RAISG dataset vias\n::zoom1-12, labels>=7 ",
+  "legend": "",
+  "attribution": "InfoAmazonia"
+}

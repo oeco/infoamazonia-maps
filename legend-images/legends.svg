@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="400"
+   height="440.00012"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.2 r9819"
+   inkscape:export-filename="/Users/ianvilleda/Documents/MapBox/project/deforestation/img/legend.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   sodipodi:docname="legends.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3869">
+      <stop
+         id="stop3871"
+         offset="0"
+         style="stop-color:#0e0700;stop-opacity:1" />
+      <stop
+         style="stop-color:#2a1100;stop-opacity:1"
+         offset="0.20829175"
+         id="stop3879" />
+      <stop
+         style="stop-color:#601a00;stop-opacity:1"
+         offset="0.50738245"
+         id="stop3877" />
+      <stop
+         style="stop-color:#bd4600;stop-opacity:1"
+         offset="0.70677626"
+         id="stop3875" />
+      <stop
+         id="stop3873"
+         offset="1"
+         style="stop-color:#fdfe00;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3765">
+      <stop
+         style="stop-color:#0a100a;stop-opacity:1"
+         offset="0"
+         id="stop3767" />
+      <stop
+         style="stop-color:#00aa00;stop-opacity:1"
+         offset="1"
+         id="stop3769" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3765"
+       id="linearGradient3771"
+       x1="9.5"
+       y1="1029.8622"
+       x2="59.466785"
+       y2="1029.6039"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(5.0000016,7.0601406e-5)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3765"
+       id="linearGradient3801"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(5.0000016,7.0601406e-5)"
+       x1="9.5"
+       y1="1029.8622"
+       x2="59.466785"
+       y2="1029.6039" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3765"
+       id="linearGradient3829"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.40000002,0,0,0.80000004,5.9444122,208.47248)"
+       x1="9.5"
+       y1="1029.8622"
+       x2="59.466785"
+       y2="1029.6039" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3765"
+       id="linearGradient3849"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.75,0,0,0.75,228.44783,265.52415)"
+       x1="9.5"
+       y1="1029.8622"
+       x2="59.466785"
+       y2="1029.6039" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3869"
+       id="linearGradient3867"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.40000003,0,0,0.80000007,5.9444179,333.73189)"
+       x1="9.5"
+       y1="1029.8622"
+       x2="59.466785"
+       y2="1029.6039" />
+    <filter
+       inkscape:collect="always"
+       id="filter3824"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.15"
+         id="feGaussianBlur3826" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="18.357143"
+     inkscape:cx="26.58486"
+     inkscape:cy="203.5921"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1280"
+     inkscape:window-height="732"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3787"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0.05558777,-882.62164)">
+    <rect
+       ry="0"
+       y="882.62164"
+       x="-0.055587769"
+       height="440.00012"
+       width="400"
+       id="rect3851"
+       style="opacity:0.80000000000000004;fill:#404040;fill-opacity:0;stroke:none"
+       inkscape:export-filename="/Users/ianvilleda/Documents/info-amazonia/oeco-amazonia/images/legends/fires.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:url(#linearGradient3829);fill-opacity:1;stroke:none"
+       id="rect2987"
+       width="20"
+       height="20"
+       x="9.9444122"
+       y="1022.3622"
+       inkscape:export-filename="/Users/ianvilleda/Documents/info-amazonia/oeco-amazonia/maps-src/forest-height.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="68.277306"
+       y="1042.6217"
+       id="text3773"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3775"
+         x="68.277306"
+         y="1042.6217">FOREST HEIGHT</tspan></text>
+    <rect
+       y="982.62164"
+       x="9.9444122"
+       height="20"
+       width="20"
+       id="rect3777"
+       style="fill:#ffd500;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/Users/ianvilleda/Documents/info-amazonia/oeco-amazonia/maps-src/deforestation.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:#ff2c00;fill-opacity:1;stroke:none"
+       id="rect3781"
+       width="20"
+       height="20"
+       x="9.9444122"
+       y="942.62164"
+       inkscape:export-filename="/Users/ianvilleda/Documents/info-amazonia/oeco-amazonia/maps-src/last3months.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="1147.6217"
+       x="9.9444122"
+       height="20"
+       width="20"
+       id="rect3853"
+       style="fill:url(#linearGradient3867);fill-opacity:1;stroke:none"
+       inkscape:export-filename="/Users/ianvilleda/Documents/info-amazonia/oeco-amazonia/maps-src/fire-freq.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3855"
+       y="1162.6217"
+       x="68.271126"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/Users/ianvilleda/Documents/info-amazonia/oeco-amazonia/images/legends/fires.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         y="1162.6217"
+         x="68.271126"
+         id="tspan3857"
+         sodipodi:role="line">FIRE FREQUENCY</tspan></text>
+    <rect
+       style="fill:#ffd500;fill-opacity:1;stroke:none"
+       id="rect3859"
+       width="20"
+       height="20"
+       x="9.9444122"
+       y="1059.6217"
+       inkscape:export-filename="/Users/ianvilleda/Documents/info-amazonia/oeco-amazonia/maps-src/intense-fires.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       ry="10" />
+    <rect
+       style="opacity:0.50000000000000000;fill:#212527;fill-opacity:0;stroke:none"
+       id="rect3038"
+       width="20"
+       height="20"
+       x="14.944412"
+       y="1107.6217"
+       ry="0"
+       inkscape:export-filename="/Users/ianvilleda/Documents/info-amazonia/oeco-amazonia/maps-src/monthly-fires.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="1110.6217"
+       x="17.944412"
+       height="14"
+       width="14"
+       id="rect3861"
+       style="fill:#ff2c00;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/Users/ianvilleda/Documents/info-amazonia/oeco-amazonia/maps-src/monthly-fires.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       ry="7"
+       inkscape:transform-center-x="-7" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="68.271126"
+       y="1072.6217"
+       id="text3863"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/Users/ianvilleda/Documents/info-amazonia/oeco-amazonia/images/legends/fires.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3865"
+         x="68.271126"
+         y="1072.6217">INTENSE FIRES</tspan></text>
+    <g
+       id="g3806"
+       transform="matrix(0.38980833,0,0,0.82975022,8.8718465,205.5039)">
+      <image
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/ianvilleda/Documents/info-amazonia/protected-areas.png"
+         width="47.148308"
+         height="22.148308"
+         xlink:href="data:image/png;base64,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 "
+         id="image3847"
+         x="4.8317971"
+         y="1185.5859" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/ianvilleda/Documents/info-amazonia/protected-areas.png"
+         style="opacity:0.75;fill:none;stroke:#00eb00;stroke-width:2.85169387;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect3013"
+         width="47.148304"
+         height="22.148306"
+         x="4.8317971"
+         y="1185.5859" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"
+       x="67.916336"
+       y="1202.6217"
+       id="text3015"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3017"
+         x="67.916336"
+         y="1202.6217">protected areas</tspan><tspan
+         sodipodi:role="line"
+         x="67.916336"
+         y="1230.535"
+         id="tspan3019" /></text>
+    <g
+       id="g3801"
+       transform="matrix(0.40000002,0,0,0.80000006,9.9666473,250.52422)">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/ianvilleda/Documents/info-amazonia/oeco-amazonia/maps-src/rect3029.png"
+         style="opacity:0.8;fill:#037385;fill-opacity:1;stroke:none"
+         id="rect3021"
+         width="16.666666"
+         height="24.999998"
+         x="16.611078"
+         y="1227.6217" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/Users/ianvilleda/Documents/info-amazonia/oeco-amazonia/maps-src/rect3029.png"
+         y="1227.6217"
+         x="-0.055587769"
+         height="24.999998"
+         width="16.666666"
+         id="rect3025"
+         style="opacity:0.8;fill:#05f8d7;fill-opacity:1;stroke:none" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         style="fill:#013038;fill-opacity:1;stroke:none"
+         id="rect3029"
+         width="16.666666"
+         height="24.999998"
+         x="33.277744"
+         y="1227.6217" />
+    </g>
+    <g
+       id="g3828"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="translate(10,14.000107)">
+      <g
+         style="fill:#013038;fill-opacity:0"
+         transform="matrix(1,0,0,0.96000007,0,90.104733)"
+         id="g3810">
+        <rect
+           inkscape:export-ydpi="90"
+           inkscape:export-xdpi="90"
+           inkscape:export-filename="/Users/ianvilleda/Documents/info-amazonia/oeco-amazonia/maps-src/rect3029.png"
+           style="opacity:0.8;fill:#013038;fill-opacity:0;stroke:none"
+           id="rect3812"
+           width="16.666666"
+           height="24.999998"
+           x="16.611078"
+           y="1227.6217" />
+        <rect
+           inkscape:export-ydpi="90"
+           inkscape:export-xdpi="90"
+           inkscape:export-filename="/Users/ianvilleda/Documents/info-amazonia/oeco-amazonia/maps-src/rect3029.png"
+           y="1227.6217"
+           x="-0.055587769"
+           height="24.999998"
+           width="16.666666"
+           id="rect3814"
+           style="opacity:0.8;fill:#013038;fill-opacity:0;stroke:none" />
+        <rect
+           inkscape:export-ydpi="90"
+           inkscape:export-xdpi="90"
+           style="fill:#013038;fill-opacity:0;stroke:none"
+           id="rect3816"
+           width="16.666666"
+           height="24.999998"
+           x="33.277744"
+           y="1227.6217" />
+      </g>
+      <rect
+         transform="matrix(0.98580442,0,0,0.74626865,-7.8910085e-4,319.97868)"
+         y="1282.2616"
+         x="0.30441225"
+         height="10"
+         width="50"
+         id="rect3818"
+         style="fill:#550000;fill-opacity:1;stroke:none;filter:url(#filter3824)" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"
+       x="67.783394"
+       y="1252.6217"
+       id="text3835"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3837"
+         x="67.783394"
+         y="1252.6217">mining concessions</tspan><tspan
+         sodipodi:role="line"
+         x="67.783394"
+         y="1282.3647"
+         id="tspan3839" /></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3841"
+       y="1302.6217"
+       x="68.631531"
+       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#fffdff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"
+       xml:space="preserve"><tspan
+         y="1302.6217"
+         x="68.631531"
+         id="tspan3843"
+         sodipodi:role="line">oil pipelines</tspan><tspan
+         id="tspan3845"
+         y="1332.3647"
+         x="68.631531"
+         sodipodi:role="line" /></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3856"
+       y="1002.6216"
+       x="68.493248"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"><tspan
+         y="1002.6216"
+         x="68.493248"
+         id="tspan3858"
+         sodipodi:role="line">historical deforesation</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="232.76746"
+       y="-133.6514"
+       id="text3860"
+       sodipodi:linespacing="125%"
+       transform="translate(-0.05558777,1062.3251)"><tspan
+         sodipodi:role="line"
+         id="tspan3862"
+         x="232.76746"
+         y="-133.6514" /></text>
+  </g>
+</svg>

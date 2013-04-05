@@ -1,0 +1,98 @@
+{
+  "bounds": [
+    -68.9502,
+    -31.0529,
+    -37.3095,
+    4.5655
+  ],
+  "center": [
+    -59.0625,
+    -12.3507,
+    7
+  ],
+  "format": "png",
+  "interactivity": {
+    "fields": [
+      "polo",
+      "producao",
+      "gid"
+    ],
+    "layer": "polosmadeireiros",
+    "template_teaser": "<div class=\"tootip\">\n\t<div class=\"lang-en\">\n\t\t<h3>Timber Clusters</h3>\n\t\t<div class=\"name\">{{{polo}}}</div>\n\t\t<div class=\"production\"><span class=\"label\">Annual production: </span>{{{producao}}}m<sup>3</sup></div>\n\t</div>\n\t\t<div class=\"lang-es\">\n\t\t<h3>Postes de madera</h3>\n\t\t<div class=\"name\">{{{polo}}}</div>\n\t\t<div class=\"production\"><span class=\"label\">Annual production: </span>{{{producao}}}m<sup>3</sup></div>\n\t</div>\n\t\t<div class=\"lang-pt\">\n\t\t<h3>Polos Madeireiros</h3>\n\t\t<div class=\"name\">{{{polo}}}</div>\n\t\t<div class=\"production\"><span class=\"label\">Annual production: </span>{{{producao}}}m<sup>3</sup></div>\n\t</div>\n</div>"
+  },
+  "minzoom": 7,
+  "maxzoom": 11,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "point",
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT\ngid,\nthe_geom,\nnome,\nestagio,\ncodmun1,\nmunic1,\nrio,\nto_char(p_out_kw, '999,999,999') as output,\nto_char(ainud_km2_, '9,999.99') as area_inud,\nproprietar\nFROM dams) AS DATA",
+        "extent": "",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "host": "localhost",
+        "dbname": "amazonia",
+        "user": "postgres"
+      },
+      "id": "usina",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "name": "usina"
+    },
+    {
+      "geometry": "point",
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT \ngid,\nthe_geom,\ninitcap(nome_munic) as nome_munic, \nto_char(c_abate, '999,999') as output\nFROM cows) AS DATA",
+        "extent": "",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "host": "localhost",
+        "dbname": "amazonia",
+        "user": "postgres"
+      },
+      "id": "imazonslaughterhouse",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "name": "imazonslaughterhouse"
+    },
+    {
+      "geometry": "point",
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT\ngid,\nthe_geom,\npolo, \nto_char(producao, '9,999,999') as producao \nfrom trees) AS DATA ",
+        "extent": "",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "dbname": "amazonia",
+        "host": "localhost",
+        "user": "postgres"
+      },
+      "id": "polosmadeireiros",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "name": "polosmadeireiros",
+      "extent": [
+        -67.7940182873422,
+        -13.6477634756181,
+        -46.9734642884869,
+        2.81655861296917
+      ],
+      "advanced": {}
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "poi-amazonia",
+  "description": "",
+  "attribution": "",
+  "legend": ""
+}

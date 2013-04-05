@@ -1,0 +1,78 @@
+{
+  "bounds": [
+    -79.4751,
+    -24.8266,
+    -36.4966,
+    10.5094
+  ],
+  "center": [
+    -56.9641,
+    -7.1118,
+    7
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "tis",
+    "template_teaser": "<div class=\"lang-pt\">\n                <h2>Território Indígena</H2>\n\t\t<div class='nombre'><span class='label'>Nome:</span> {{{nombre}}}</div>\n                <div class='category'><span class='label'>Categoria:</span> {{{leyenda}}}</div>\n\t\t<div class='applicant'><span class='label'>Etnias:</span> {{{etnias}}}</div>\n\t\t<div class='mineral'><span class='label'>Habitantes:</span> {{{no_habitantes}}} </div>\n                <div class='area'><span class='label'>Área oficial:</span> {{{area_oficial_ha}}} ha </div>\n</div>\n\n<div class=\"lang-es\">\n                <h2>Territorio Indígena</H2>\n\t\t<div class='nombre'><span class='label'>Nombre:</span> {{{nombre}}}</div>\n                <div class='category'><span class='label'>Categoría:</span> {{{leyenda}}}</div>\n\t\t<div class='applicant'><span class='label'>Etnias:</span> {{{etnias}}}</div>\n\t\t<div class='mineral'><span class='label'>Habitantes:</span> {{{no_habitantes}}} </div>\n                <div class='area'><span class='label'>Área oficial:</span> {{{area_oficial_ha}}} ha </div>\n</div>\n\n<div class=\"lang-en\">\n                <h2>Indigenous Lands</H2>\n\t\t<div class='nombre'><span class='label'>Name:</span> {{{nombre}}}</div>\n\t\t<div class='applicant'><span class='label'>Ethnicity:</span> {{{etnias}}}</div>\n\t\t<div class='mineral'><span class='label'>Inhabitants:</span> {{{no_habitantes}}} </div>\n                <div class='area'><span class='label'>Official area:</span> {{{area_oficial_ha}}} ha </div>\n</div>\n",
+    "fields": [
+      "nombre",
+      "leyenda",
+      "etnias",
+      "no_habitantes",
+      "area_oficial_ha",
+      "objectid"
+    ]
+  },
+  "minzoom": 2,
+  "maxzoom": 12,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "extent": [
+        -79.1947021484375,
+        -24.2712841033936,
+        -36.9103775024414,
+        10.0663347244263
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "isa.tis",
+        "key_field": "objectid",
+        "geometry_field": "shape",
+        "extent_cache": "auto",
+        "extent": "-79.1947021484375,-24.2712841033936,-36.9103775024414,10.0663347244263",
+        "dbname": "bd_raisg",
+        "host": "186.225.123.203",
+        "port": "45432",
+        "user": "ecoamazonia",
+        "password": "xpto@amz"
+      },
+      "id": "tis",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "tis"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "_basemap": "",
+  "name": "RAISG_territorios_indigenas_7-12",
+  "description": ". indigenous lands - RAISG dataset tis\n::zoom 7-12, interactivity",
+  "attribution": "InfoAmazonia",
+  "legend": ""
+}

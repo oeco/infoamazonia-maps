@@ -1,0 +1,46 @@
+{
+  "bounds": [
+    -104.0625,
+    -39.096,
+    -5.625,
+    26.116
+  ],
+  "center": [
+    -53.877,
+    -12.8975,
+    4
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 0,
+  "maxzoom": 22,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "raster",
+      "extent": [
+        -94.32929999999999,
+        -31.45930000000001,
+        -12.309699999999978,
+        16.64834999999999
+      ],
+      "id": "frequency",
+      "class": "",
+      "Datasource": {
+        "file": "~Dropbox/InfoAmazonia_data/1_environmentalLayers/dark-fires-merc.tif"
+      },
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "frequency"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "",
+  "description": "",
+  "attribution": ""
+}

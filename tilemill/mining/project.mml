@@ -1,0 +1,138 @@
+{
+  "bounds": [
+    -87.0707,
+    -38.6228,
+    -31.5238,
+    13.1469
+  ],
+  "center": [
+    -76.5458,
+    -0.6888,
+    9
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "",
+    "template_teaser": "\n<div class='tooltip'>\n\t<div class=\"lang-en\">\n\t\t<h2>{{{FASE}}}</H2>\n\t\t<div class='year'><span class='label'>Year:</span> {{{ANO}}}</div>\n\t\t<div class='applicant'><span class='label'>Applicant:</span> {{{NOME}}}</div>\n\t\t<div class='mineral'><span class='label'>Mineral:</span> {{{SUBS}}} </div>\n\t</div>\n\t<div class=\"lang-es\">\n\t\t<h2>{{{FASE}}}</H2>\n\t\t<div class='year'><span class='label'>Año:</span> {{{ANO}}}</div>\n\t\t<div class='applicant'><span class='label'>Solicitante:</span> {{{NOME}}}</div>\n\t\t<div class='mineral'><span class='label'>Mineral:</span> {{{SUBS}}} </div>\n\t</div>\n\t<div class=\"lang-pt\">\n\t\t<h2>{{{FASE}}}</H2>\n\t\t<div class='year'><span class='label'>Ano:</span> {{{ANO}}}</div>\n\t\t<div class='applicant'><span class='label'>Requerente:</span> {{{NOME}}}</div>\n\t\t<div class='mineral'><span class='label'>Mineral:</span> {{{SUBS}}} </div>\n\t</div>\n</div>",
+    "fields": [
+      "FASE",
+      "ANO",
+      "NOME",
+      "SUBS"
+    ]
+  },
+  "minzoom": 0,
+  "maxzoom": 10,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss",
+    "top.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "raster",
+      "id": "forestclipdark",
+      "class": "",
+      "Datasource": {
+        "file": "layers/mining/forest-clip-dark.tif"
+      },
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "name": "forestclipdark",
+      "extent": [
+        -88.60142545,
+        -39.99855911,
+        -30.001448889999992,
+        13.101419649999997
+      ],
+      "advanced": {}
+    },
+    {
+      "geometry": "polygon",
+      "id": "maskinglayer",
+      "class": "",
+      "Datasource": {
+        "file": "layers/mining/maskinglayer/simp-mask-areas.shp",
+        "id": "maskinglayer",
+        "project": "amazon-fires",
+        "srs": null
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "name": "maskinglayer",
+      "extent": [
+        -92.82635380197796,
+        -39.987336816636144,
+        -29.363238138577827,
+        13.407764930883339
+      ],
+      "advanced": {}
+    },
+    {
+      "geometry": "polygon",
+      "id": "miningcombined",
+      "class": "",
+      "Datasource": {
+        "file": "layers/mining/miningcombined/mining-combined.shp",
+        "id": "miningcombined",
+        "project": "amazon-fires",
+        "srs": null,
+        "encoding": "iso-8859-15"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "name": "miningcombined",
+      "extent": [
+        -72.60925277799998,
+        -17.949665161999988,
+        -41.86052777799995,
+        4.037707949000033
+      ],
+      "advanced": {
+        "encoding": "iso-8859-15"
+      }
+    },
+    {
+      "geometry": "linestring",
+      "id": "eixodutoviario",
+      "class": "",
+      "Datasource": {
+        "file": "layers/mining/eixodutoviario/EixoDutoviario.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "name": "eixodutoviario",
+      "extent": [
+        -70.3338678668837,
+        -30.549646489342372,
+        -34.954783304365606,
+        -1.3381074215217368
+      ],
+      "advanced": {}
+    },
+    {
+      "geometry": "polygon",
+      "id": "topmask",
+      "class": "",
+      "Datasource": {
+        "file": "layers/mining/topmask/simp-mask-areas.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "name": "topmask",
+      "extent": [
+        -92.82635380197796,
+        -39.987336816636144,
+        -29.363238138577827,
+        13.407764930883339
+      ],
+      "advanced": {}
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "Mining",
+  "description": "",
+  "legend": "",
+  "attribution": ""
+}

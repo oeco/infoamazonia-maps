@@ -1,0 +1,119 @@
+{
+  "bounds": [
+    -74.5752,
+    -18.8127,
+    -41.3525,
+    6.2279
+  ],
+  "center": [
+    -55.8984,
+    -6.8828,
+    5
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "cattle",
+    "template_teaser": "<img src=\"http://chart.googleapis.com/chart?chxl=0:|2000|01|02|03|04|05|06|07|08|09|10|11\n&chxs=0,676767,9,0,lt,676767|1,676767,9,0,lt,676767\n&chxt=x,y\n&chs=229x165\n&cht=lc\n&chco=D95F0E\n&chds=a\n&chg=0,20\n&chd=t:{{{ANHO2000b}}},{{{ANHO2001b}}},{{{ANHO2002b}}},{{{ANHO2003b}}},{{{ANHO2004b}}},{{{ANHO2005b}}},{{{ANHO2006b}}},{{{ANHO2007b}}},{{{ANHO2008b}}},{{{ANHO2009b}}},{{{ANHO2010b}}},{{{ANHO2011b}}}\n&chma=0,05,20,0\n&chtt={{{NM_MUNICIP}}}&chts=676767,12\" width=\"229\" height=\"165\"/>",
+    "fields": [
+      "ANHO2000b",
+      "ANHO2001b",
+      "ANHO2002b",
+      "ANHO2003b",
+      "ANHO2004b",
+      "ANHO2005b",
+      "ANHO2006b",
+      "ANHO2007b",
+      "ANHO2008b",
+      "ANHO2009b",
+      "ANHO2010b",
+      "ANHO2011b",
+      "NM_MUNICIP"
+    ],
+    "template_full": ""
+  },
+  "minzoom": 4,
+  "maxzoom": 10,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "states.mss",
+    "cattle.mss",
+    "stateBorders.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "extent": [
+        -73.99044996899829,
+        -18.041580750798396,
+        -41.7958843809523,
+        5.27184107724554
+      ],
+      "id": "cattle",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/julianamori/Dropbox/InfoAmazonia_data/2_POIs/Hackathon/shapefiles/amazonia-final.shp",
+        "encoding": "ISO8859-10",
+        "id": "cattle",
+        "project": "cattleranching_hackaton",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {
+        "encoding": "ISO8859-10"
+      },
+      "name": "cattle"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -70.8119953,
+        -12.6818712,
+        -45.6007108,
+        2.7375971
+      ],
+      "id": "states",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/julianamori/Dropbox/InfoAmazonia_data/2_POIs/Hackathon/origData/estados_brasil.csv",
+        "id": "states",
+        "project": "cattleranching_hackaton",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "states"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -73.99044996899828,
+        -18.041580750798442,
+        -41.795884380952316,
+        5.2718410772455755
+      ],
+      "id": "stateBorders",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/julianamori/Dropbox/InfoAmazonia_data/2_POIs/Hackathon/shapefiles/amazonia-states.shp",
+        "id": "stateBorders",
+        "project": "cattleranching_hackaton",
+        "srs": "",
+        "encoding": "ISO8859-10"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {
+        "encoding": "ISO8859-10"
+      },
+      "name": "stateBorders"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "ganado_teste",
+  "description": "",
+  "legend": "<!-- cattle simple legend - - - - - - - - - - - - - - -->\n\n\n<div class='legend' >\n\n<div class='lang-en'>\n\t<span class=\"label\"><strong>Cattle by municipality</strong></span><br />\n\t<span style='color:#FED98E'>▉</span> <span class=\"label\">Less than 50.000 heads<br /></span>\n\t<span style='color:#FE9929'>▉</span> <span class=\"label\">More than 50.000 heads<br/></span>\n        <span style='color:#D95F0E'>▉</span> <span class=\"label\">More than 200.000 heads <br/></span>\n        <span style='color:#993404'>▉</span> <span class=\"label\">More than 1.000.000 heads<br/></span>\n<br></br>\n        <span style='color:#969696'>⬤</span> <span class=\"label\">Total confiscated farms per state<br/></span>\n</div>\n\n\n<div class='lang-es'>\n\t<span class=\"label\"><strong>Ganado por municipalidad</strong></span><br />\n\t<span style='color:#FED98E'>▉</span> <span class=\"label\">Menos que 50.000 cabezas<br /></span>\n\t<span style='color:#FE9929'>▉</span> <span class=\"label\">Más que 50.000 cabezas<br/></span>\n        <span style='color:#D95F0E'>▉</span> <span class=\"label\">Más que 200.000 cabezas<br/></span>\n        <span style='color:#993404'>▉</span> <span class=\"label\">Más que 1.000.000 cabezas<br/></span>\n<br></br>\n        <span style='color:#969696'>⬤</span> <span class=\"label\">Total de fincas confiscadas por estado<br/></span>\n</div>\n\n\n<div class='lang-pt'>\n\t<span class=\"label\"><strong>Gado por município</strong></span><br />\n\t<span style='color:#FED98E'>▉</span> <span class=\"label\">Menos que 50.000 cabeças<br /></span>\n\t<span style='color:#FE9929'>▉</span> <span class=\"label\">Mais que 50.000 cabeças<br/></span>\n        <span style='color:#D95F0E'>▉</span> <span class=\"label\">Mais que 200.000 cabeças<br/></span>\n        <span style='color:#993404'>▉</span> <span class=\"label\">Mais que 1.000.000 cabeças<br/></span>\n<br></br>\n        <span style='color:#969696'>⬤</span> <span class=\"label\">Total de fazendas confiscadas por estado<br/></span>\n</div>\n\n\n</div>",
+  "attribution": ""
+}

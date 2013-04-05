@@ -1,0 +1,72 @@
+{
+  "bounds": [
+    -93.9166,
+    -56.4291,
+    -26.5924,
+    13.982
+  ],
+  "center": [
+    -78.5577,
+    -2.6029,
+    8
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "osmwaterways",
+    "template_teaser": " {{{NAME_LOC}}}",
+    "fields": [
+      "NAME_LOC"
+    ]
+  },
+  "minzoom": 7,
+  "maxzoom": 12,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.15166732835152,
+        -55.96969001797988,
+        -34.801393126384106,
+        12.610306570986655
+      ],
+      "id": "osmwaterareas",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/julianamori/Desktop/infoAmazonia/DADOS/osm_water_sa/osm_waterareas/osm_waterareas.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "osmwaterareas"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -176.88040743508446,
+        -55.26862621162363,
+        -34.800021679386866,
+        12.51789558558446
+      ],
+      "id": "osmwaterways",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/julianamori/Desktop/infoAmazonia/DADOS/osm_water_sa/osm_waterways/osm_waterways.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "osmwaterways"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "_basemap": "",
+  "name": "osm_hidrografia_expedicoes7-12",
+  "description": "base hidrografia OSM ASul\ncom destaque para os rios da expedição Andes Água Amazonia,\netiquetas ",
+  "legend": "",
+  "attribution": "InfoAmazonia"
+}

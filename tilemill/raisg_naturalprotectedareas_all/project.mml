@@ -1,0 +1,121 @@
+{
+  "bounds": [
+    -79.8528,
+    -20.6553,
+    -42.5871,
+    9.9884
+  ],
+  "center": [
+    -62.5823,
+    -5.7274,
+    7
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "",
+    "template_teaser": "<div class=\"lang-pt\">\n\t\t<h2>Área Natural Protegida</H2>\n                {{{uso}}}\n\t\t<div class='nombre'><span class='label'>Nome:</span> {{{nombre}}}</div>\n\t\t<div class='category'><span class='label'>Categoria:</span> {{{categoria}}}</div>\n                <div class='area'><span class='label'>Área oficial:</span> {{{area_oficial_ha}}} ha </div>\n</div>\n\n<div class=\"lang-es\">\n\t\t<h2>Área Natural Protegida</H2>\n                {{{leyenda}}}\n\t\t<div class='nombre'><span class='label'>Nombre:</span> {{{nombre}}}</div>\n\t\t<div class='category'><span class='label'>Categoría:</span> {{{categoria}}}</div>\n                <div class='area'><span class='label'>Área oficial:</span> {{{area_oficial_ha}}} ha </div>\n</div>\n\n<div class=\"lang-en\">\n\t\t<h2>Natural Protected Area</H2>\n                {{{leyenda}}}\n                <div class='nombre'><span class='label'>Name:</span> {{{nombre}}}</div>\n\t\t<div class='category'><span class='label'>Category:</span> {{{categoria}}}</div>\n                <div class='area'><span class='label'>Official area:</span> {{{area_oficial_ha}}} ha </div>\n</div>",
+    "fields": [
+      "uso",
+      "nombre",
+      "categoria",
+      "area_oficial_ha",
+      "leyenda"
+    ]
+  },
+  "minzoom": 1,
+  "maxzoom": 12,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "extent": [
+        -79.6589202880859,
+        -4.9146294593811,
+        -75.9302062988281,
+        0.61030650138855
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "isa.bosques",
+        "key_field": "objectid",
+        "geometry_field": "shape",
+        "extent_cache": "auto",
+        "extent": "-79.6589202880859,-4.9146294593811,-75.9302062988281,0.61030650138855",
+        "dbname": "bd_raisg",
+        "host": "186.225.123.203",
+        "port": "45432",
+        "user": "ecoamazonia",
+        "password": "xpto@amz"
+      },
+      "id": "isabosques",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "isabosques"
+    },
+    {
+      "extent": [
+        -73.082389831543,
+        -20.4556884765625,
+        -42.7793083190918,
+        3.79497671127319
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "isa.deptales",
+        "key_field": "objectid",
+        "geometry_field": "shape",
+        "extent_cache": "auto",
+        "extent": "-73.082389831543,-20.4556884765625,-42.7793083190918,3.79497671127319",
+        "dbname": "bd_raisg",
+        "host": "186.225.123.203",
+        "port": "45432",
+        "user": "ecoamazonia",
+        "password": "xpto@amz"
+      },
+      "id": "isadeptales",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "isadeptales"
+    },
+    {
+      "extent": [
+        -81.1495590209961,
+        -20.2509613037109,
+        -44.5519485473633,
+        9.82295608520508
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "isa.nacionales",
+        "key_field": "objectid",
+        "geometry_field": "shape",
+        "extent_cache": "auto",
+        "extent": "-81.1495590209961,-20.2509613037109,-44.5519485473633,9.82295608520508",
+        "dbname": "bd_raisg",
+        "host": "186.225.123.203",
+        "port": "45432",
+        "user": "ecoamazonia",
+        "password": "xpto@amz"
+      },
+      "id": "anpnacionales",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "anpnacionales"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "_basemap": "",
+  "name": "protectedareasRAISG_all_noInteraction_1-12",
+  "description": "Natural protected areas -  all RAISG datasets\n.ANPNacionales .Deptales .Bosques\n:: 1-12, no teaser",
+  "legend": "",
+  "attribution": "InfoAmazonia"
+}

@@ -1,0 +1,113 @@
+{
+  "bounds": [
+    -75.498,
+    -18.7295,
+    -42.2314,
+    6.4027
+  ],
+  "center": [
+    -55.2063,
+    -7.3189,
+    7
+  ],
+  "format": "png",
+  "interactivity": {
+    "fields": [
+      "date_c",
+      "area_en"
+    ],
+    "layer": "desmatamento",
+    "template_teaser": "<!-- deforestation -->\n\n<div class=\"tootip\">\n\t<div class=\"lang-en\">\n\t\t<h3>Areas deforested</h3>\n\t\t<div class=\"date\"><span class=\"label\">Detection date:</span> {{{date_c}}} </div>\n\t\t<div class=\"area\"><span class=\"label\">Area:</span> {{{area_en}}} hectares</div>\t\n\t</div>\n\t<div class=\"lang-es\">\n\t\t<h3>Áreas deforestadas</h3>\n\t\t<div class=\"date\"><span class=\"label\">Fecha de detección:</span> {{{date_c}}}</div>\n\t\t<div class=\"area\"><span class=\"label\">Área:</span> {{{area_en}}} hectáreas</div>\n\t</div>\n\t<div class=\"lang-pt\">\n\t\t<h3>Áreas desmatadas</h3>\n\t\t<div class=\"date\"><span class=\"label\">Data de detecção:</span> {{{date_c}}}</div>\n\t\t<div class=\"area\"><span class=\"label\">Área:</span> {{{area_en}}} hectares</div>\n\t</div>\n</div>\n"
+  },
+  "minzoom": 7,
+  "maxzoom": 10,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select\n*,\nto_char(view_date, 'YYYY-MM-DD') as date_c\nfrom desmata_clean) as data",
+        "extent": "",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "host": "localhost",
+        "dbname": "amazonia",
+        "user": "postgres",
+        "id": "desmatamento",
+        "project": "deforestation",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "id": "desmatamento",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "name": "desmatamento",
+      "extent": [
+        -73.79496265625396,
+        -17.443867826174912,
+        -43.999019071848345,
+        5.158897086472844
+      ],
+      "advanced": {}
+    },
+    {
+      "geometry": "polygon",
+      "id": "desm91",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/julianamori/Dropbox/InfoAmazonia_data/1_environmentalLayers/deforestation/desm91.shp",
+        "id": "desm91",
+        "project": "deforestation",
+        "srs": null
+      },
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "name": "desm91",
+      "extent": [
+        -73.48404974973985,
+        -17.99743644237503,
+        -44.00000016377354,
+        5.102000982593942
+      ],
+      "advanced": {}
+    },
+    {
+      "geometry": "polygon",
+      "Datasource": {
+        "type": "postgis",
+        "table": "last3months",
+        "extent": "",
+        "key_field": "gid",
+        "geometry_field": "the_geom",
+        "host": "localhost",
+        "dbname": "amazonia",
+        "user": "postgres",
+        "id": "last3months",
+        "project": "deforestation",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "id": "last3months",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "name": "last3months",
+      "extent": [
+        -68.85331277561212,
+        -15.540564515685153,
+        -44.963850140751596,
+        2.6419287198158496
+      ],
+      "advanced": {}
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "deforestation",
+  "description": "",
+  "attribution": "",
+  "legend": "<!-- deforestation - good images - good lang - - - - - - - - - - - - - - -->\n\n\n<div class='legend' >\n\n<div class='lang-en'>\n\t<div class=\"l3-deforestation key\"> \n\t\t<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAiSURBVDiNY/yvw/CfgYqAiZqGjRo4auCogaMGjho4lAwEADIrAlIVkvZBAAAAAElFTkSuQmCC' /> \n\t\t<span class=\"label\">Deforested Jan - Oct 2012 </span>\n\t</div>\n\t\n\t<div class=\"r-deforestation key\"> \n\t\t<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAiSURBVDiNY/x/leE/AxUBEzUNGzVw1MBRA0cNHDVwKBkIAF6JAvvVtl19AAAAAElFTkSuQmCC' /> \n\t\t<span class=\"label\">Deforested 2004 - 2011</span>\n\t</div>\n\t\n\t<div class=\"h-deforestation key\">\n\t\t<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACsSURBVDiN7dPNDYJAEIbhd0dKkGgBhqM12IEnKVJOVqB1GAtQoQCN4ngBDL87xpvhOz+ZzGa/capKLUc3JSfmxYWUHSt90pUeJy0YacaNBGFGyJqDCzoH9jjX2rDMyYU82Hg3bTine4JBfCcGzt6hhZPBZy00JScB5lYnXrzUq2lo4eQbbHFSYd+vGp1U2FIVg6vX5sdSfzYsE2nGhK2p1D1uvJRGxkv5j0t5AxYj9pE+761zAAAAAElFTkSuQmCC' /> \n\t\t<span class=\"\tlabel\">Deforested 1976 - 1991</span>\n\t</div>\n\t\n\t<div class=\"forest-height key\">\n\t\t<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABhSURBVDiNY+QS4/r/n/0/AwMHA8N/jv8MDOxQmoOBAUWcEB+qj4mByoB8A/9T20AcgHgDcbgI00AiFRILqONlJEcNolgmykAqhOdQ8zJNDSQzPAeJl/G4fpC4cGgZiBaeAFLJHceSAZttAAAAAElFTkSuQmCC' />\t\n\t\t<span class=\"label\">Forest height 0 - 73m</span>\n\t</div>\n</div>\n\n<div class='lang-es'>\n\t<div class=\"l3-deforestation key\"> \n\t\t<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAiSURBVDiNY/yvw/CfgYqAiZqGjRo4auCogaMGjho4lAwEADIrAlIVkvZBAAAAAElFTkSuQmCC' /> \n\t\t<span class=\"label\">Área deforestada ene - oct 2012 </span>\n\t</div>\n\t\n\t<div class=\"r-deforestation key\"> \n\t\t<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAiSURBVDiNY/x/leE/AxUBEzUNGzVw1MBRA0cNHDVwKBkIAF6JAvvVtl19AAAAAElFTkSuQmCC' />\n\t\t<span class=\"label\">Área deforestada 2004 - 2011</span>\n\t</div>\n\t\n\t<div class=\"h-deforestation key\">\n\t\t<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACsSURBVDiN7dPNDYJAEIbhd0dKkGgBhqM12IEnKVJOVqB1GAtQoQCN4ngBDL87xpvhOz+ZzGa/capKLUc3JSfmxYWUHSt90pUeJy0YacaNBGFGyJqDCzoH9jjX2rDMyYU82Hg3bTine4JBfCcGzt6hhZPBZy00JScB5lYnXrzUq2lo4eQbbHFSYd+vGp1U2FIVg6vX5sdSfzYsE2nGhK2p1D1uvJRGxkv5j0t5AxYj9pE+761zAAAAAElFTkSuQmCC' /> \n\t\t<span class=\"label\">Área deforestada 1976 - 1991</span>\n\t</div>\n\t\n\t<div class=\"forest-height key\">\n\t\t<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABhSURBVDiNY+QS4/r/n/0/AwMHA8N/jv8MDOxQmoOBAUWcEB+qj4mByoB8A/9T20AcgHgDcbgI00AiFRILqONlJEcNolgmykAqhOdQ8zJNDSQzPAeJl/G4fpC4cGgZiBaeAFLJHceSAZttAAAAAElFTkSuQmCC' />\n\t\t<span class=\"label\">Altura de la selva 0 - 73m</span>\n\t</div>\n</div>\n\n<div class='lang-pt'>\n\t<div class=\"l3-deforestation key\"> \n\t\t<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAiSURBVDiNY/yvw/CfgYqAiZqGjRo4auCogaMGjho4lAwEADIrAlIVkvZBAAAAAElFTkSuQmCC' /> \n\t\t<span class=\"label\">Área desmatada jan - out 2012 </span>\n\t</div>\n\t\n\t<div class=\"r-deforestation key\"> \n\t\t<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAiSURBVDiNY/x/leE/AxUBEzUNGzVw1MBRA0cNHDVwKBkIAF6JAvvVtl19AAAAAElFTkSuQmCC' />\n\t\t<span class=\"label\"> Área desmatada 2004 - 2011</span>\n\t</div>\n\t\n\t<div class=\"h-deforestation key\">\n\t\t<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACsSURBVDiN7dPNDYJAEIbhd0dKkGgBhqM12IEnKVJOVqB1GAtQoQCN4ngBDL87xpvhOz+ZzGa/capKLUc3JSfmxYWUHSt90pUeJy0YacaNBGFGyJqDCzoH9jjX2rDMyYU82Hg3bTine4JBfCcGzt6hhZPBZy00JScB5lYnXrzUq2lo4eQbbHFSYd+vGp1U2FIVg6vX5sdSfzYsE2nGhK2p1D1uvJRGxkv5j0t5AxYj9pE+761zAAAAAElFTkSuQmCC' /> \n\t\t<span class=\"label\">Área desmatada 1976 - 1991</span>\n\t</div>\n\t\n\t<div class=\"forest-height key\">\n\t\t<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABhSURBVDiNY+QS4/r/n/0/AwMHA8N/jv8MDOxQmoOBAUWcEB+qj4mByoB8A/9T20AcgHgDcbgI00AiFRILqONlJEcNolgmykAqhOdQ8zJNDSQzPAeJl/G4fpC4cGgZiBaeAFLJHceSAZttAAAAAElFTkSuQmCC' />\n\t\t<span class=\"label\">Altura da floresta 0 - 73m</span>\n\t</div>\n</div>\n\n</div>"
+}

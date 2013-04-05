@@ -1,0 +1,70 @@
+{
+  "bounds": [
+    -83.8477,
+    -23.3221,
+    -37.002,
+    12.9831
+  ],
+  "center": [
+    -69.5655,
+    -1.0107,
+    4
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "",
+    "template_teaser": "<div class=\"lang-pt\">\n\t\t<h2>Zonas de mineração</H2>\n                <div class='situacion'><span class='label'>Estágio:</span> {{{leyenda}}}</div>\n\t\t<div class='nombre'><span class='label'>Nome:</span> {{{nombre}}}</div>\n\t\t<div class='applicant'><span class='label'>Requerente:</span> {{{cia}}}</div>\n\t\t<div class='mineral'><span class='label'>Minério:</span> {{{tipo_minerio}}} </div>\n                <div class='mineral'><span class='label'>Área oficial:</span> {{{area_oficial_ha}}} ha </div>\n</div>\n\n<div class=\"lang-es\">\n\t\t<h2>Zonas de minería</H2>\n                <div class='situacion'><span class='label'>Etapa:</span> {{{leyenda}}}</div>\n\t\t<div class='nombre'><span class='label'>Nombre:</span> {{{nombre}}}</div>\n\t\t<div class='applicant'><span class='label'>Solicitante:</span> {{{cia}}}</div>\n                <div class='mineral'><span class='label'>Área oficial:</span> {{{area_oficial_ha}}} ha </div>\n</div>\n\n<div class=\"lang-en\">\n\t\t<h2>Mining zones</H2>\n                <div class='situacion'><span class='label'>Stage:</span> {{{leyenda}}}</div>\n\t\t<div class='nombre'><span class='label'>Name:</span> {{{nombre}}}</div>\n\t\t<div class='applicant'><span class='label'>Applicant:</span> {{{cia}}}</div>\n                <div class='mineral'><span class='label'>Oficial area:</span> {{{area_oficial_ha}}} ha </div>\n</div>",
+    "fields": [
+      "leyenda",
+      "nombre",
+      "cia",
+      "tipo_minerio",
+      "area_oficial_ha"
+    ]
+  },
+  "minzoom": 1,
+  "maxzoom": 12,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "extent": [
+        -81.30871582031251,
+        -22.9011268615723,
+        -41.7942504882812,
+        11.2260131835938
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "isa.mineria_pl",
+        "key_field": "objectid",
+        "geometry_field": "shape",
+        "extent_cache": "auto",
+        "extent": "-81.3087158203125,-22.9011268615723,-41.7942504882812,11.2260131835938",
+        "dbname": "bd_raisg",
+        "host": "186.225.123.203",
+        "port": "45432",
+        "user": "ecoamazonia",
+        "password": "xpto@amz",
+        "id": "isamineriapl",
+        "project": "ISA_mineracao",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "isamineriapl",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "isamineriapl"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "_basemap": "",
+  "name": "RAISG_zonas_mineria",
+  "description": ".zonas mineras (db ISA-RAISG)",
+  "attribution": "InfoAmazonia",
+  "legend": ""
+}
