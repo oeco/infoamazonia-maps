@@ -42,15 +42,15 @@ Historical deforestation is powered by the 'desm91' shapefile that lives here:
 
 More recent deforestation is powered by the postgis database, for the above reasons but also so that 'last3months' table retrieves the last 3 months of deforestation data, regardless of when the last import of data was. The desmata.sql database dump includes data from jan 2005 to mar 2012. 
 
-You should now be able to open the project in TileMill. 
+You should now be able to open the project in TileMill.
 
 ### Updating deforestation
 
-To update the table, download and reproject the latest DETER update:
+To update the table, download the latest DETER update (the link is on [InfoAmazonia](http://infoamazonia.org/data/#deter-monthly) ). Then reproject :
 
 	ogr2ogr -s_srs EPSG:4291 -t_srs EPSG:900913 deter_june2012.shp deter_201206.shp
 
-Now you can run the following command from you bash shell (this example will import the DETER data from march 2012):
+Now you can run the following command from you bash shell (this example will import the DETER data from june 2012):
 
 	shp2pgsql -D -a deter_june2012.shp desmata | psql -d amazonia
 	
