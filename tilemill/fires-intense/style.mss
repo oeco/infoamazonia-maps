@@ -1,14 +1,14 @@
-/* 
+/*
 Map {background-color:rgb(14,7,0);} 
 
-#firefreqmerc { 
+#firefreqmerc {
   raster-opacity:1; 
   raster-scaling:lanczos;
   } 
 */
-#high_frp { 
+#high_frp {
   [zoom<=5] {
-  	[frp >= 8266.67] { marker-width:4 ; }  
+  	[frp >= 8266.67] { marker-width:4; }  
   	[frp >= 11033.34] { marker-width:6; }  
   	marker-width:2;
   	marker-line-width:1;
@@ -26,7 +26,7 @@ Map {background-color:rgb(14,7,0);}
   	marker-line-width:2;
   	}
   marker-fill:#fd0;
-  marker-fill-opacity:.75;  
+  marker-opacity:.75;  
   marker-line-opacity:.45;
   marker-line-color:#ff2c00;
   marker-allow-overlap:true; 
