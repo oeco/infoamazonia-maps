@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<metadata xml:lang="pt"><Esri><CreaDate>20120817</CreaDate><CreaTime>11264100</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="C:\Program Files (x86)\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120817" Time="112641">CalculateField imazon_sad_desmatamento_2012_07_amazonia codsad "183515 + [FID]" VB #</Process></lineage></DataProperties></Esri></metadata>
