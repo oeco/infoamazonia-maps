@@ -31,7 +31,7 @@ CREATE TABLE last3months AS
 	to_char(view_date, 'DD Month YYYY') AS date,
 	to_char(round(area / 10000, 2), '999,999.99') AS area_en
 FROM desmata 
-WHERE view_date > (SELECT view_date FROM desmata WHERE view_date IS NOT NULL ORDER BY view_date DESC LIMIT 1) - INTERVAL '03 months');
+WHERE view_date > (SELECT view_date FROM desmata WHERE view_date IS NOT NULL ORDER BY view_date DESC LIMIT 1) - INTERVAL '10 months');
 
 
 -- index geometry for new tables, desmata_clean ('dc') and last3months ('l3')
