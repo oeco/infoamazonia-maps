@@ -1,0 +1,231 @@
+{
+  "bounds": [
+    -180,
+    -85.05112877980659,
+    180,
+    85.05112877980659
+  ],
+  "center": [
+    0,
+    0,
+    2
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 0,
+  "maxzoom": 22,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "extent": [
+        -72.78418389326191,
+        -15.057071952617662,
+        -48.187250848497115,
+        2.137028329757584
+      ],
+      "id": "2007",
+      "class": "deforestation_alerts",
+      "Datasource": {
+        "file": "data/2007/deforestation-sad-2007.shp",
+        "id": "2007",
+        "project": "deforestation-sad",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "2007"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -72.36132904334232,
+        -15.417114363376756,
+        -46.68836857364505,
+        2.9546195055593785
+      ],
+      "id": "2008",
+      "class": "deforestation_alerts",
+      "Datasource": {
+        "file": "data/2008/deforestation-sad-2008.shp",
+        "id": "2008",
+        "project": "deforestation-sad",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "2008"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -180,
+        -85.051,
+        180,
+        4.164780100468363
+      ],
+      "id": "2009",
+      "class": "deforestation_alerts",
+      "Datasource": {
+        "file": "data/2009/deforestation-sad-2009.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "2009"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -73.109130859375,
+        -15.812678618812532,
+        -46.49625205372729,
+        3.6703686662018207
+      ],
+      "id": "2010",
+      "class": "deforestation_alerts",
+      "Datasource": {
+        "file": "data/2010/deforestation-sad-2010.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "2010"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -73.12582293290976,
+        -17.806068980474862,
+        -47.068609871392496,
+        3.1068258525796786
+      ],
+      "id": "2011",
+      "class": "deforestation_alerts",
+      "Datasource": {
+        "file": "data/2011/deforestation-sad-2011.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "2011"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -73.12053699999986,
+        -16.741887999999932,
+        -46.6090524995445,
+        2.5989581947549922
+      ],
+      "id": "2012",
+      "class": "deforestation_alerts",
+      "Datasource": {
+        "file": "data/2012/deforestation-sad-2012.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "2012"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -64.7309229416495,
+        -12.46891633262154,
+        -51.05881224057865,
+        2.5533796053391775
+      ],
+      "id": "2013-01",
+      "class": "deforestation_alerts",
+      "Datasource": {
+        "file": "data/2013-01/imazon_sad_desmatamento_2013-01_amazonia.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "2013-01"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -62.16508713323461,
+        -13.130444406481674,
+        -49.834616158503025,
+        -4.4968749577684655
+      ],
+      "id": "2013-02",
+      "class": "deforestation_alerts",
+      "Datasource": {
+        "file": "data/2013-02/imazon_sad_desmatamento_2013-02_amazonia.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "2013-02"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -70.25799693321422,
+        -13.261458095063578,
+        -53.587289758018166,
+        2.7468748604102906
+      ],
+      "id": "2013-03",
+      "class": "deforestation_alerts",
+      "Datasource": {
+        "file": "data/2013-03/imazon_sad_desmatamento_2013-03_amazonia.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "2013-03"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -68.40688686524682,
+        -13.170995409468741,
+        -50.61958735449814,
+        4.66198479982058
+      ],
+      "id": "2013-04",
+      "class": "deforestation_alerts",
+      "Datasource": {
+        "file": "data/2013-04/imazon_sad_desmatamento_2013-04_amazonia.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "2013-04"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -68.49539364789844,
+        -13.798958089744037,
+        -48.415105201343906,
+        -2.8927083062432994
+      ],
+      "id": "2013-05",
+      "class": "deforestation_alerts",
+      "Datasource": {
+        "file": "data/2013-05/imazon_sad_desmatamento_2013-05_amazonia.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "2013-05"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "Deforestation data from Imazon SAD",
+  "description": ""
+}
