@@ -15,4 +15,8 @@ tilemill/fires/style.mss
 tilemill/fires/style.mss
 =======
 .DS_Store
+<<<<<<< HEAD
 >>>>>>> 244be5f5006f745307386ae24a6b83c6a50195a4
+=======
+tilemill/.DS_Store
+>>>>>>> ignore
