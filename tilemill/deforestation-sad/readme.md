@@ -1,8 +1,8 @@
-== Map: Deforestation data from Imazon SAD ==
+# Map: Deforestation data from Imazon SAD
 
 This is the TileMill project for deforestation data from Imazon SAD.
 
-== How to update the map ==
+## How to update the map
 
 Follow the steps:
 
