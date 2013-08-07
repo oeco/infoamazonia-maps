@@ -64,6 +64,12 @@ Once the import is complete you will need to update and optimize the tables in y
 
 These projects are also is being powered by the postgres database. They are broken out into separate projects so preserve interactivity for both the high-intensity (yellow) layer, and the recent fires layer (red). Data for both these layer has been included in the desmata.sql dump. 
 
+### Source
+
+Monthly data should be requested at:
+
+http://firms.modaps.eosdis.nasa.gov/download/
+
 ### Updating Fires
 
 You can now import it with shp2pgsql. Again, note the `-a` flag that appends this data to the fires table rather than overwriting the existing table. Read more about shp2pgsql [here](http://www.bostongis.com/pgsql2shp_shp2pgsql_quickguide_20.bqg).
