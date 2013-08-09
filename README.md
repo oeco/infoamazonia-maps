@@ -1,21 +1,31 @@
-# TileMill Projects
+# InfoAmazonia maps
 
-Most TileMill projects for the maps on infoamazonia site live in `/oeco-amazonia/maps-src/tilemill/`. Exceptions include 
+This repository hosts the TileMill projects for the maps available at [infoamazonia.org](http://infoamazonia.org). 
 
-- forest-height map
-- fire-frequency heatmap
-- osm roads and labels
+Please follow the instructions to generate these maps locally:
 
-OSM borders + labels were left out due to the complex nature of the project, and the unlikely event that the border or labels will need to be frequently updated. 
+1. [Download](#download)
+2. [Adding a map project to TileMill](#adding-a-map-project-to-tilemill)
+3. Map data
+	1. [Deforestation](#deforestation)
+	2. [Deforestation from Imazon SAD](#deforestation-data-from-imazon-sad)
+	3. [Fires](#fires)
+	4. [Mining](#mining)
+4. [Other info](#other-info)
 
+## Download
 
-## Install
+Download this [zipfile](https://github.com/oeco/infoamazonia-maps/archive/master.zip) or clone the repository on your computer:
 
-You can either copy each of the projects in this directory to TileMill project directory (default: `~/Documents/Mapbox/project`), or you can create [symlinks](http://en.wikipedia.org/wiki/Symbolic_link) to the projects as they exist in the GitHub repo. For example
+	git clone https://github.com/oeco/infoamazonia-maps.git
+
+## Adding a map project to TileMill
+
+The map projects are located in `tilemill` folder and you can copy them to the TileMill project directory, often located at `~/Documents/Mapbox/project`. Alternatively, you can create a [symlink](http://en.wikipedia.org/wiki/Symbolic_link) to your local git repository. For example:
 
 	ln -s ~/path-to/oeco-amazonia/maps-src/tilemill/deforestation ~/Documents/Mapbox/project/deforestation
-	
-This will let you use git to track changes made in TileMill. 
+
+This will let you use git to track changes made in TileMill.
 
 An effort has been made to point all non-postgres layers at directories in the dropbox, minimizing set up time. You can move data layers into git-tracked directories but be sure to use 'git checkout' to make sure they're not pushed to the GitHub repo - this will needlessly slow down everyone's pulls, especially as this data already exists in the dropbox. 
 
@@ -60,6 +70,33 @@ Once the import is complete you will need to update and optimize the tables in y
 
 	psql -d amazonia -f desmata-update.sql 
 
+## Deforestation data from Imazon SAD
+
+Follow the steps to update the map:
+
+1. Download the latest file at: http://www.imazongeo.org.br/doc/downloads.php
+
+2. Create new folder at `data` directoy following the partern 'data/{year}-{month}'. For example, folder for April 2013 should be named `2013-04`.
+
+3. Expand the zip file downloaded at this diretory.
+
+4. Imazon doesn't follow a convention for column names at the shapefile. The map uses three attributes: area, month and year. Follow the steps to create new columns which TileMill will understand:
+
+  1. Open the shapefile with QGIS;
+  2. Right-click the layer and open attribute table;
+  3. Enable 'Edit mode' by clicking at the pen button bellow or type `Ctrl+E`;
+  4. Open 'Field Calculator' by clicking at calculator button or type `Ctrl+I`;
+  5. Create a new field name `area` by typing the name, choosing type 'real' (setting lenght 20, precision 10) and adding current field name at expression textbox (for 2013, it's 'Shape_area');
+  6. Create a new field name `area` by typing the name, choosing type 'real' (setting lenght 20, precision 10) and adding current field name at expression textbox (should be 'Shape_area');
+  7. Create a new field name `year` by typing the name, choosing type 'integer' and adding current field name at expression textbox (should be 'ano');
+  8. Create a new field name `month` by typing the name, choosing type 'integer' and adding current field name at expression textbox (should be 'mes');
+
+5. At TileMill, add a new layer for this file, following naming convention already used. Make the file path relative by removing everything before 'data/2013...', and set class to 'deforestation_alerts';
+
+6. Check if layer is renderend properly and upload it to Mapbox;
+
+7. Commit your changes to this repository.
+
 ## Fires
 
 These projects are also is being powered by the postgres database. They are broken out into separate projects so preserve interactivity for both the high-intensity (yellow) layer, and the recent fires layer (red). Data for both these layer has been included in the desmata.sql dump. 
@@ -97,6 +134,6 @@ again, run the optimization script in `/maps-src`.
 - to regenerate the map, you will need an older developer build (some of the features this map uses have been in rapid development). specifically you'll need [Tilemill v0.9.1.6x](https://github.com/downloads/mapbox/tilemill/TileMill-0.9.1.66-compositing-preview.zip) version.
 - the project should now work. be careful not to commit the data layers, as they will weight down the repo.
 
-# Legends + Tooltips
+## Other info
 
 Legends should already be saved in TileMill projects, but have also been saved as an html file at `oeco-amazonia/maps-src/legends-src.html`. The same is true of tooltips, which live at `oeco-amazonia/maps-src/tooltip-src.html`
