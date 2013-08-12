@@ -95,6 +95,15 @@ If there is a new file from Imazon SAD, follow the instructions:
 8. Upload it to Mapbox (if needed);
 9. Commit changes to this repository.
 
+If you new to download all files again, run these commands inside `data` folder:
+
+	mkdir zips
+	cd zips
+	wget -r -nd -A "imazon_sad_desmatamento*.zip" http://www.imazongeo.org.br/doc/downloads.php
+	unzip \*.zip -j -d expanded
+
+You'll find the shapefiles uncompressed in `data/zips/expanded'.
+
 ## Fires
 
 These projects are also is being powered by the postgres database. They are broken out into separate projects so preserve interactivity for both the high-intensity (yellow) layer, and the recent fires layer (red). Data for both these layer has been included in the desmata.sql dump. 
