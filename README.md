@@ -72,30 +72,28 @@ Once the import is complete you will need to update and optimize the tables in y
 
 ## Deforestation data from Imazon SAD
 
-Follow the steps to update the map:
+Imazon SAD publishes deforestation alerts monthly at this page:
 
-1. Download the latest file at: http://www.imazongeo.org.br/doc/downloads.php
+http://www.imazongeo.org.br/doc/downloads.php
+ 
+Field names were kept in portuguese to simplify the process of updating data when a new file is available at Imazon.
 
-2. Create new folder at `data` directoy following the partern 'data/{year}-{month}'. For example, folder for April 2013 should be named `2013-04`.
+In the data folder you'll find a file name `alerts.shp`, which has all Imazon SAD information to date.
 
-3. Expand the zip file downloaded at this diretory.
+If there is a new file from Imazon SAD, follow the instructions:
 
-4. Imazon doesn't follow a convention for column names at the shapefile. The map uses three attributes: area, month and year. Follow the steps to create new columns which TileMill will understand:
+1. Download the latest file and unzip it to `data` folder. You should have only two shapefiles at you data folder, `alerts.shp` and the new one from Imazon SAD;
+2. Open QGIS and select menu 'Vector' / 'Data Management Tools' / 'Merge Shapefile to One';
+3. Select the `data` folder as the input directory;
+4. Save a output shapefile name `alerts-new.shp` at `data` folder, 
+5. Use the field calculator in QGIS to update `Area_ha` field, using this expression bellow. This will recalculate the area in hectares and round to 2 decimal places:
 
-  1. Open the shapefile with QGIS;
-  2. Right-click the layer and open attribute table;
-  3. Enable 'Edit mode' by clicking at the pen button bellow or type `Ctrl+E`;
-  4. Open 'Field Calculator' by clicking at calculator button or type `Ctrl+I`;
-  5. Create a new field name `area` by typing the name, choosing type 'real' (setting lenght 20, precision 10) and adding current field name at expression textbox (for 2013, it's 'Shape_area');
-  6. Create a new field name `area` by typing the name, choosing type 'real' (setting lenght 20, precision 10) and adding current field name at expression textbox (should be 'Shape_area');
-  7. Create a new field name `year` by typing the name, choosing type 'integer' and adding current field name at expression textbox (should be 'ano');
-  8. Create a new field name `month` by typing the name, choosing type 'integer' and adding current field name at expression textbox (should be 'mes');
-
-5. At TileMill, add a new layer for this file, following naming convention already used. Make the file path relative by removing everything before 'data/2013...', and set class to 'deforestation_alerts';
-
-6. Check if layer is renderend properly and upload it to Mapbox;
-
-7. Commit your changes to this repository.
+		toReal(toInt("AREA" * 10000)) /100
+		
+6. Finally, in QGIS, save `alerts-new.shp` as `alerts.shp`, overwriting the old file;
+7. Regenerate map at TileMill project;
+8. Upload it to Mapbox (if needed);
+9. Commit changes to this repository.
 
 ## Fires
 
