@@ -80,29 +80,33 @@ Field names were kept in portuguese to simplify the process of updating data whe
 
 In the data folder you'll find a file name `alerts.shp`, which has all Imazon SAD information to date.
 
-If there is a new file from Imazon SAD, follow the instructions:
+Follow the instructions to update map data:
 
 1. Download the latest file and unzip it to `data` folder. You should have only two shapefiles at you data folder, `alerts.shp` and the new one from Imazon SAD;
 2. Open QGIS and select menu 'Vector' / 'Data Management Tools' / 'Merge Shapefile to One';
 3. Select the `data` folder as the input directory;
 4. Save a output shapefile name `alerts-new.shp` at `data` folder, 
-5. Use the field calculator in QGIS to update `Area_ha` field, using this expression bellow. This will recalculate the area in hectares and round to 2 decimal places:
+5. Use the field calculator in QGIS to update `area_ha` field, using the expression bellow. This will recalculate the area in hectares and round to 2 decimal places:
 
-		toReal(toInt("AREA" * 10000)) /100
+  CASE 
+    WHEN AREA > 0 THEN toReal(toInt(AREA * 10000)) /100
+    WHEN area_km2 > 0 THEN toReal(toInt(area_km2 * 10000)) /100
+    WHEN area_km2_ > 0 THEN toReal(toInt(area_km2_ * 10000)) /100    
+    WHEN F_AREA > 0 THEN toReal(toInt(F_AREA * 10000)) /100
+    WHEN Shape_Area > 0 THEN toReal(toInt(Shape_Area * 10000)) /100
+  END
 		
 6. Finally, in QGIS, save `alerts-new.shp` as `alerts.shp`, overwriting the old file;
-7. Regenerate map at TileMill project;
-8. Upload it to Mapbox (if needed);
+7. Regenerate the map at TileMill;
+8. Upload it to Mapbox;
 9. Commit changes to this repository.
 
-If you new to download all files again, run these commands inside `data` folder:
+If you need to download all source files again, run these commands inside `tilemill\deforestion-sad\data` folder:
 
-	mkdir zips
-	cd zips
-	wget -r -nd -A "imazon_sad_desmatamento*.zip" http://www.imazongeo.org.br/doc/downloads.php
-	unzip \*.zip -j -d expanded
+	wget -r -nd -A "imazon_sad_desmatamento*.zip" -P sources http://www.imazongeo.org.br/doc/downloads.php
+	unzip -j sources/\*.zip -d sources-expanded -j
 
-You'll find the shapefiles uncompressed in `data/zips/expanded'.
+You'll find the shapefiles uncompressed in `tilemill\deforestion-sad\data\sources-expanded`.
 
 ## Fires
 

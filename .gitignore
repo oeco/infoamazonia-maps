@@ -1,22 +1,9 @@
-<<<<<<< HEAD
-
-tilemill/.DS_Store
-
-tilemill/fires-intense/project.mml
-
-tilemill/fires-intense/style.mss
-
-tilemill/fires-recent/project.mml
-
-tilemill/fires-recent/style.mss
-
-tilemill/fires/style.mss
-
-tilemill/fires/style.mss
-=======
+# OS generated files #
+######################
 .DS_Store
-<<<<<<< HEAD
->>>>>>> 244be5f5006f745307386ae24a6b83c6a50195a4
-=======
-tilemill/.DS_Store
->>>>>>> ignore
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
