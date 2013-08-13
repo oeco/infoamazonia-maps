@@ -72,34 +72,33 @@ Once the import is complete you will need to update and optimize the tables in y
 
 ## Deforestation data from Imazon SAD
 
-Imazon SAD publishes deforestation alerts monthly at this page:
+Imazon publishes monthly deforestation alerts at this page:
 
 http://www.imazongeo.org.br/doc/downloads.php
- 
-Field names were kept in portuguese to simplify the process of updating data when a new file is available at Imazon.
 
-In the data folder you'll find a file name `alerts.shp`, which has all Imazon SAD information to date.
+In the `tile/deforestation-sad/data` folder you'll find a file named `alerts.shp`, which has all Imazon SAD information to date.
 
-Follow the instructions to update map data:
+If you need to update this file, follow the instructions:
 
-1. Download the latest file and unzip it to `data` folder. You should have only two shapefiles at you data folder, `alerts.shp` and the new one from Imazon SAD;
-2. Open QGIS and select menu 'Vector' / 'Data Management Tools' / 'Merge Shapefile to One';
-3. Select the `data` folder as the input directory;
-4. Save a output shapefile name `alerts-new.shp` at `data` folder, 
-5. Use the field calculator in QGIS to update `area_ha` field, using the expression bellow. This will recalculate the area in hectares and round to 2 decimal places:
+1) Download the latest file and unzip it to `data` folder. You should have only two shapefiles at you data folder, `alerts.shp` and the new one from Imazon SAD;<br>
+2) Open QGIS and select menu 'Vector' / 'Data Management Tools' / 'Merge Shapefile to One';<br>
+3) Select the `data` folder as the input directory;<br>
+4) Save the output shapefile as `alerts-new.shp` at `data` folder;<br>
+5) Open this file in QGIS, and use the code bellow in the the field calculator to update `area_ha` field: <br>
 
-  CASE 
-    WHEN AREA > 0 THEN toReal(toInt(AREA * 10000)) /100
-    WHEN area_km2 > 0 THEN toReal(toInt(area_km2 * 10000)) /100
-    WHEN area_km2_ > 0 THEN toReal(toInt(area_km2_ * 10000)) /100    
-    WHEN F_AREA > 0 THEN toReal(toInt(F_AREA * 10000)) /100
-    WHEN Shape_Area > 0 THEN toReal(toInt(Shape_Area * 10000)) /100
-  END
-		
-6. Finally, in QGIS, save `alerts-new.shp` as `alerts.shp`, overwriting the old file;
-7. Regenerate the map at TileMill;
-8. Upload it to Mapbox;
-9. Commit changes to this repository.
+```
+	CASE 
+		WHEN AREA > 0 THEN toReal(toInt(AREA * 10000)) /100
+		WHEN area_km2 > 0 THEN toReal(toInt(area_km2 * 10000)) /100
+		WHEN area_km2_ > 0 THEN toReal(toInt(area_km2_ * 10000)) /100    
+		WHEN F_AREA > 0 THEN toReal(toInt(F_AREA * 10000)) /100
+		WHEN Shape_Area > 0 THEN toReal(toInt(Shape_Area * 10000)) /100
+	END
+```
+6) Finally, in QGIS, save `alerts-new.shp` as `alerts.shp`, overwriting the old file;<br>
+7) Regenerate the map at TileMill;<br>
+8) Upload it to Mapbox;<br>
+9) Delete old files and commit changes to this repository.<br>
 
 If you need to download all source files again, run these commands inside `tilemill\deforestion-sad\data` folder:
 
