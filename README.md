@@ -109,34 +109,9 @@ You'll find the shapefiles uncompressed in `tilemill\deforestion-sad\data\source
 
 ## Fires
 
-These projects are also is being powered by the postgres database. They are broken out into separate projects so preserve interactivity for both the high-intensity (yellow) layer, and the recent fires layer (red). Data for both these layer has been included in the desmata.sql dump. 
+This project was migrated to a separate repository:
 
-### Source
-
-Monthly data should be requested at:
-
-http://firms.modaps.eosdis.nasa.gov/download/
-
-### Updating Fires
-
-You can now import it with shp2pgsql. Again, note the `-a` flag that appends this data to the fires table rather than overwriting the existing table. Read more about shp2pgsql [here](http://www.bostongis.com/pgsql2shp_shp2pgsql_quickguide_20.bqg).
-
-	shp2pgsql -D -a july-merc.shp fires | psql -d amazonia
-	
-Before your changes will take a effect you will need to the `update-fires.sql` script:
-
-	psql -d amazonia -f update-fires.sql
-
-After importing the FIRMS data, and running the update-fires.sql script, tilemill project for both high-intensity fires and recent fires should work. 
-
-__OPTIONAL:__ To load historical data yourself [re-projecting](http://mapbox.com/tilemill/docs/guides/optimizing-shapefiles/) your NASA shapefile to Google Mercator you will need to upload it with shp2pgsql. Be sure to call the table 'fires' as in the import command below:
-
-	shp2pgsql -D -a firms1961337193914.shp fires| psql -d amazonia
-
-again, run the optimization script in `/maps-src`. 
-
-	psql -d amazonia -f update-fires.sql
-
+https://github.com/oeco/tm-fires
 
 ## Mining (and protected areas)
 
