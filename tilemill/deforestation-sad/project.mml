@@ -1,8 +1,8 @@
 {
   "bounds": [
-    -74.6191,
-    -17.8951,
-    -45.835,
+    -74.6411,
+    -16.3412,
+    -45.813,
     4.6531
   ],
   "center": [
@@ -13,11 +13,11 @@
   "format": "png",
   "interactivity": {
     "layer": "alerts",
-    "template_teaser": "<!-- deforestation -->\n\n<div class=\"tootip\">\n\t<div class=\"lang-en\">\n\t\t<h3>Deforested Areas</h3>\n\t\t<div class=\"date\"><span class=\"label\">Detection date:</span> {{{ANO}}}.{{{MES}}} </div>\n\t\t<div class=\"area\"><span class=\"label\">Area:</span> {{{area_ha}}} hectares</div>\t\n\t</div>\n\t<div class=\"lang-es\">\n\t\t<h3>Áreas deforestadas</h3>\n\t\t<div class=\"date\"><span class=\"label\">Fecha de detección:</span> {{{MES}}}.{{{ANO}}}</div>\n\t\t<div class=\"area\"><span class=\"label\">Área:</span> {{{area_ha}}} hectáreas</div>\n\t</div>\n\t<div class=\"lang-pt\">\n\t\t<h3>Áreas desmatadas</h3>\n\t\t<div class=\"date\"><span class=\"label\">Data de detecção:</span> {{{area_ha}}}.{{{MES}}}</div>\n\t\t<div class=\"area\"><span class=\"label\">Área:</span> {{{area_ha}}} hectares</div>\n\t</div>\n</div>",
+    "template_teaser": "<!-- deforestation -->\n\n<div class=\"tootip\">\n\t<div class=\"lang-en\">\n\t\t<h3>Deforested Areas</h3>\n\t\t<div class=\"date\"><span class=\"label\">Detection date:</span> {{{ANO}}}.{{{MES}}} </div>\n\t\t<div class=\"area\"><span class=\"label\">Area:</span> {{{area_ha}}} hectares</div>\t\n\t</div>\n\t<div class=\"lang-es\">\n\t\t<h3>Áreas deforestadas</h3>\n\t\t<div class=\"date\"><span class=\"label\">Fecha de detección:</span> {{{MES}}}.{{{ANO}}}</div>\n\t\t<div class=\"area\"><span class=\"label\">Área:</span> {{{area_ha}}} hectáreas</div>\n\t</div>\n\t<div class=\"lang-pt\">\n\t\t<h3>Áreas desmatadas</h3>\n\t\t<div class=\"date\"><span class=\"label\">Data de detecção:</span> {{{MES}}}.{{{ANO}}}</div>\n\t\t<div class=\"area\"><span class=\"label\">Área:</span> {{{area_ha}}} hectares</div>\n\t</div>\n</div>",
     "fields": [
-      "year",
-      "month",
-      "area"
+      "ANO",
+      "MES",
+      "area_ha"
     ]
   },
   "minzoom": 1,

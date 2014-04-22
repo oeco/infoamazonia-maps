@@ -1,19 +1,26 @@
 {
   "bounds": [
-    -180,
-    -85.05112877980659,
-    180,
-    85.05112877980659
+    -94.2373,
+    -35.8312,
+    -34.3838,
+    16.1144
   ],
   "center": [
-    0,
-    0,
-    2
+    -62.333,
+    -6.681,
+    4
   ],
   "format": "png",
-  "interactivity": false,
-  "minzoom": 0,
-  "maxzoom": 22,
+  "interactivity": {
+    "layer": "inspections",
+    "template_teaser": "<h1 style=\"line-height:20px;display:inline;color:#FFF;\">{{{Total}}}</h1>\n<p class=\"lang-pt\" style=\"display:inline;\">escravos libertados 2003/2012</p>\n<p class=\"lang-es\" style=\"display:inline;\">esclavos rescatados 2003/2012</p>\n<p class=\"lang-en\" style=\"display:inline;\">rescued slaves 2003/2012</p>\n<div style=\"color:#FFF;font-weight: bold;margin-top:2px;display: block;\">{{{Municipalidade}}}</div>",
+    "fields": [
+      "Total",
+      "Municipalidade"
+    ]
+  },
+  "minzoom": 4,
+  "maxzoom": 12,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "style.mss"
@@ -39,17 +46,38 @@
       ]
     },
     {
+      "geometry": "polygon",
+      "extent": [
+        -73.99350248843054,
+        -18.04249870308551,
+        -41.79702959253773,
+        5.27149090991509
+      ],
+      "id": "limite-amazonia",
+      "class": "image",
+      "Datasource": {
+        "file": "data/UFS_AmLeg_LLwgs84/UFS_AMZLEG_LLWGS84.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "limite-amazonia"
+    },
+    {
       "geometry": "point",
       "extent": [
-        -67.9518592792014,
-        -31.3938595243163,
-        -35.228501497065,
+        -70.3539836082165,
+        -16.2595094669667,
+        -46.13876521614951,
         2.60766639841651
       ],
       "id": "inspections",
       "class": "",
       "Datasource": {
-        "file": "data/Forced-Labour.csv"
+        "file": "data/Forced_Labour_in Amazonia.csv",
+        "id": "inspections",
+        "project": "forced-labour",
+        "srs": ""
       },
       "srs-name": "autodetect",
       "srs": "",
@@ -59,6 +87,8 @@
   ],
   "scale": 1,
   "metatile": 2,
-  "name": "Forced labour",
-  "description": ""
+  "name": "Forced Labour",
+  "description": "",
+  "attribution": "",
+  "legend": ""
 }
